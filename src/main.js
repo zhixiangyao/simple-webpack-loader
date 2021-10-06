@@ -1,5 +1,5 @@
-import Text from './text.txt'
+import Data from './data.txt'
 
 const msgElement = document.querySelector('#message')
 
-msgElement.innerText = Text
+msgElement.innerText = Data
