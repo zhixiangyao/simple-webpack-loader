@@ -1,6 +1,7 @@
 function bLoader(content, map, meta) {
   console.log('start bLoader Normal Loader')
-  return content + 'bLoader->'
+  // return content + 'bLoader->'
+  return Promise.resolve(content + 'bLoader->')
 }
 
 bLoader.pitch = function (remainingRequest, precedingRequest, data) {

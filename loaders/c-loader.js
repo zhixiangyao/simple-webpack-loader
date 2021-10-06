@@ -1,6 +1,7 @@
 function cLoader(content, map, meta) {
   console.log('start cLoader Normal Loader')
-  return content + '[cLoader->'
+  // return content + '[cLoader->'
+  this.callback(null, content + '[cLoader->', map, meta)
 }
 
 cLoader.pitch = function (remainingRequest, precedingRequest, data) {
