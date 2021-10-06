@@ -1,7 +1,16 @@
 function cLoader(content, map, meta) {
   console.log('start cLoader Normal Loader')
-  // return content + '[cLoader->'
+
+  /**
+   * this.callback(
+   *   err: Error | null,
+   *   content: string | Buffer,
+   *   sourceMap?: SourceMap,
+   *   meta?: any
+   * )
+   */
   this.callback(null, content + '[cLoader->', map, meta)
+  // return content + '[cLoader->'
 }
 
 cLoader.pitch = function (remainingRequest, precedingRequest, data) {
