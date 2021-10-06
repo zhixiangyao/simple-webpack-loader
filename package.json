@@ -1,0 +1,13 @@
+{
+  "name": "simple-webpack-loader",
+  "version": "0.1.0",
+  "author": "zhixiangyao",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
